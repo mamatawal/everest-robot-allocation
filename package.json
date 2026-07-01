@@ -1,0 +1,13 @@
+{
+  "name": "everest-robot-allocation",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/api"
+  ],
+  "scripts": {
+    "cli": "npm run cli --workspace @everest/api",
+    "build": "npm run build --workspace @everest/api",
+    "test": "npm run test --workspace @everest/api"
+  }
+}
