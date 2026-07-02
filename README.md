@@ -120,5 +120,9 @@ Reports `Level 1 Cost`, `Level 2 Cost`, `Cost Difference`, and an insight explai
 ## Testing
 
 - Unit tests cover the allocation service, CLI argument handling, standby planning, and multi-client planning.
-- The test suite currently has 28 tests.
+- The test suite currently has 31 tests.
 - Run all tests with `npm test`.
+
+## AI Tool Disclosure
+
+AI assistance was used during development for implementation support, edge-case review, and README/test polish. The final code, behavior, and tests were reviewed and verified by the author before submission.

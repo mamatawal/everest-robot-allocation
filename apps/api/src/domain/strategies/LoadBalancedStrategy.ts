@@ -34,7 +34,7 @@ export class LoadBalancedStrategy implements AllocationStrategy {
   allocate(inventory: RobotInventory, requestedHours: number): StrategyAllocationResult {
     const feasiblePlans = enumerateUsefulPlans(inventory, requestedHours, { requireAllCategories: true })
       .filter((plan) => usedCategoryCount(plan) === 3)
-      .map((plan) => computeMetrics(plan, requestedHours))
+      .map((plan) => computeMetrics(plan, requestedHours));
 
     if (feasiblePlans.length === 0) {
       throw new CategoryDistributionError();
